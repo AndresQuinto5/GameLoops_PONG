@@ -79,3 +79,49 @@ Este script ejecuta el proyecto. Asegúrate de haber compilado el proyecto con `
 ```bash
 ./run.sh
 ```
+
+## Cómo Ejecutar el Proyecto
+
+Se han creado varios scripts para facilitar la compilación, ejecución y control de versiones del proyecto. A continuación se describen estos scripts:
+
+### build.sh
+
+Este script compila el proyecto. Para ejecutarlo, abrir una terminal, navegar hasta el directorio del proyecto y ejecutar:
+
+```bash
+./build.sh
+```
+
+### clean.sh
+
+Este script elimina todos los archivos generados durante la compilación. Ejecutar este script para realizar una compilación limpia:
+
+```bash
+./clean.sh
+```
+
+### configure.sh
+
+Este script configura el entorno para la compilación, generando los archivos necesarios. Es necesario ejecutar este script antes de `build.sh`:
+
+```bash
+./configure.sh
+```
+
+### github.sh
+
+Este script facilita los commits al repositorio de GitHub. Ejecutar con un mensaje de commit como argumento:
+
+```bash
+./github.sh "Mensaje de commit"
+```
+
+El script preguntará si se desea hacer un push al repositorio remoto tras realizar el commit.
+
+### run.sh
+
+Este script ejecuta el proyecto. Asegurarse de haber compilado el proyecto con `build.sh` antes de ejecutar este script:
+
+```bash
+./run.sh
+```
